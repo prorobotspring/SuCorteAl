@@ -1,0 +1,246 @@
+[2015Jul13 14:21:09,452][INFO ][1436813469452][onMessage SuCorteAlBean.java:123][Mensaje recibido con exito en la cola de SOLICITUD 584120113422]
+[2015Jul13 14:21:09,455][INFO ][1436813469452][processRequest RCController.java:73][Recibido un nuevo request de la cola]
+[2015Jul13 14:21:09,456][DEBUG][1436813469452][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Jul13 14:21:09,457][DEBUG][1436813469452][buildSOAPBody IVRSMSTextInfo.java:124][Comando Ensamblado <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://server.webservices.corte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getIVRSMSTextInfo>
+         <ser:gsmNo>04120113422</ser:gsmNo>
+      </ser:getIVRSMSTextInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Jul13 14:21:09,460][DEBUG][1436813469452][execute IVRSMSTextInfo.java:86][str: org.apache.commons.httpclient.methods.StringRequestEntity@3137f0]
+[2015Jul13 14:21:09,630][DEBUG][1436813469452][execute IVRSMSTextInfo.java:106][Respuesta Obtenida de IVRSMSTextInfo: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:21:09,631][DEBUG][1436813469452][processRequest RCController.java:93][ivrSmsTextInfoResponse: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:21:09,632][INFO ][1436813469452][processRequest RCController.java:129][Consulta en ivrSmsTextInfo OK]
+[2015Jul13 14:21:09,633][DEBUG][1436813469452][processRequest RCController.java:132][Inicio de transformacion XSLT]
+[2015Jul13 14:21:09,634][DEBUG][1436813469452][transformerXML RCController.java:188][XML IVRSMSTextInfo antes del transformer <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:21:09,635][DEBUG][1436813469452][doFilter XSLTFilter.java:61][XML en transformer <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:21:09,647][DEBUG][1436813469452][removeObject ObjectPool.java:176][Verificando la existencia de objeto reutilizable]
+[2015Jul13 14:21:09,648][DEBUG][1436813469452][removeObject ObjectPool.java:183][Objeto de conexion obtenido del POOL]
+[2015Jul13 14:21:09,649][DEBUG][1436813469452][waitForObject ObjectPool.java:142][Objetp disponible en el Pool DNMO]
+[2015Jul13 14:21:09,650][DEBUG][1436813469452][applyTransform XSLTFilter.java:181][Transformer com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@1f974cb]
+[2015Jul13 14:21:09,654][DEBUG][1436813469452][doFilter XSLTFilter.java:76][Payload Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:21:09,655][DEBUG][1436813469452][transformerXML RCController.java:196][Payload Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:21:09,656][DEBUG][1436813469452][processRequest RCController.java:137][responseTranformed obtenido de la transformacion Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:21:09,657][DEBUG][1436813469452][processRequest RCController.java:148][sms2: true]
+[2015Jul13 14:21:09,659][DEBUG][1436813469452][execute SMSSenderDelegator.java:131][http://CFGLOBD09:8801/SMS/SMSSenderServlet]
+[2015Jul13 14:21:09,660][INFO ][1436813469452][execute SMSSenderDelegator.java:133][############################################### S E N D E R ############################## SU CORTE AL]
+[2015Jul13 14:21:09,661][DEBUG][1436813469452][execute SMSSenderDelegator.java:145][payloadDisculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:21:09,750][INFO ][1436813469452][execute SMSSenderDelegator.java:152][Envio de mensaje realizado]
+[2015Jul13 14:21:09,755][DEBUG][1436813469452][processRequest RCController.java:155][Mensaje enviado: Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:21:09,756][INFO ][1436813469452][processRequest RCController.java:157][SMS 2 enviado]
+[2015Jul13 14:21:09,757][DEBUG][1436813469452][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Jul13 14:21:09,758][DEBUG][1436813469452][processRequest RCController.java:175][Response: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2015Jul13 14:21:09,759][INFO ][1436813469452][onMessage SuCorteAlBean.java:127][Solicitud procesada <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2015Jul13 14:22:02,843][INFO ][1436813522843][onMessage SuCorteAlBean.java:123][Mensaje recibido con exito en la cola de SOLICITUD 584120113422]
+[2015Jul13 14:22:02,845][INFO ][1436813522843][processRequest RCController.java:73][Recibido un nuevo request de la cola]
+[2015Jul13 14:22:02,846][DEBUG][1436813522843][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Jul13 14:22:02,848][DEBUG][1436813522843][buildSOAPBody IVRSMSTextInfo.java:124][Comando Ensamblado <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://server.webservices.corte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getIVRSMSTextInfo>
+         <ser:gsmNo>04120113422</ser:gsmNo>
+      </ser:getIVRSMSTextInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Jul13 14:22:02,849][DEBUG][1436813522843][execute IVRSMSTextInfo.java:86][str: org.apache.commons.httpclient.methods.StringRequestEntity@d0182a]
+[2015Jul13 14:22:03,005][DEBUG][1436813522843][execute IVRSMSTextInfo.java:106][Respuesta Obtenida de IVRSMSTextInfo: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:22:03,006][DEBUG][1436813522843][processRequest RCController.java:93][ivrSmsTextInfoResponse: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:22:03,008][INFO ][1436813522843][processRequest RCController.java:129][Consulta en ivrSmsTextInfo OK]
+[2015Jul13 14:22:03,009][DEBUG][1436813522843][processRequest RCController.java:132][Inicio de transformacion XSLT]
+[2015Jul13 14:22:03,010][DEBUG][1436813522843][transformerXML RCController.java:188][XML IVRSMSTextInfo antes del transformer <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:22:03,011][DEBUG][1436813522843][doFilter XSLTFilter.java:61][XML en transformer <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+<soapenv:Body>
+  <ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com">
+<ns:return type="com.corte.webservices.domain.IVRSMSText" xmlns:ax27="http://domain.webservices.corte.com/xsd">
+   <ax27:error>Subsriber with prorate products</ax27:error>
+   <ax27:errorCode>3000</ax27:errorCode>
+  <ax27:lastExtractionProcessEndDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastExtractionProcessStartDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:lastPayment xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:lastPaymentDate xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+ <ax27:short_Description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:smsFormatID xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:totalConsumptions xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<ax27:trafficDetailsData xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <ax27:trafficUsageDetails xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+</ns:return>
+</ns:getIVRSMSTextInfoResponse>
+</soapenv:Body>
+</soapenv:Envelope>
+]
+[2015Jul13 14:22:03,023][DEBUG][1436813522843][removeObject ObjectPool.java:176][Verificando la existencia de objeto reutilizable]
+[2015Jul13 14:22:03,024][DEBUG][1436813522843][removeObject ObjectPool.java:183][Objeto de conexion obtenido del POOL]
+[2015Jul13 14:22:03,025][DEBUG][1436813522843][waitForObject ObjectPool.java:142][Objetp disponible en el Pool DNMO]
+[2015Jul13 14:22:03,026][DEBUG][1436813522843][applyTransform XSLTFilter.java:181][Transformer com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@1f974cb]
+[2015Jul13 14:22:03,030][DEBUG][1436813522843][doFilter XSLTFilter.java:76][Payload Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:22:03,031][DEBUG][1436813522843][transformerXML RCController.java:196][Payload Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:22:03,032][DEBUG][1436813522843][processRequest RCController.java:137][responseTranformed obtenido de la transformacion Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:22:03,033][DEBUG][1436813522843][processRequest RCController.java:148][sms2: true]
+[2015Jul13 14:22:03,034][DEBUG][1436813522843][execute SMSSenderDelegator.java:131][http://CFGLOBD09:8801/SMS/SMSSenderServlet]
+[2015Jul13 14:22:03,035][INFO ][1436813522843][execute SMSSenderDelegator.java:133][############################################### S E N D E R ############################## SU CORTE AL]
+[2015Jul13 14:22:03,037][DEBUG][1436813522843][execute SMSSenderDelegator.java:145][payloadDisculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:22:03,124][INFO ][1436813522843][execute SMSSenderDelegator.java:152][Envio de mensaje realizado]
+[2015Jul13 14:22:03,130][DEBUG][1436813522843][processRequest RCController.java:155][Mensaje enviado: Disculpe, el servicio de Corte 123 estará nuevamente disponible a partir de su próxima Fecha de Corte de Factura]
+[2015Jul13 14:22:03,131][INFO ][1436813522843][processRequest RCController.java:157][SMS 2 enviado]
+[2015Jul13 14:22:03,132][DEBUG][1436813522843][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Jul13 14:22:03,133][DEBUG][1436813522843][processRequest RCController.java:175][Response: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2015Jul13 14:22:03,134][INFO ][1436813522843][onMessage SuCorteAlBean.java:127][Solicitud procesada <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]

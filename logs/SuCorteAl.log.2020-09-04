@@ -1,0 +1,191 @@
+[2020Sep04 11:09:22,260][INFO ][1599232162260][onMessage SuCorteAlBean.java:123][Mensaje recibido con exito en la cola de SOLICITUD 584128083332]
+[2020Sep04 11:09:22,264][INFO ][1599232162260][processRequest RCController.java:73][Recibido un nuevo request de la cola]
+[2020Sep04 11:09:22,271][DEBUG][1599232162260][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Sep04 11:09:22,279][DEBUG][1599232162260][buildSOAPBody IVRSMSTextInfo.java:124][Comando Ensamblado <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://server.webservices.corte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getIVRSMSTextInfo>
+         <ser:gsmNo>04128083332</ser:gsmNo>
+      </ser:getIVRSMSTextInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2020Sep04 11:09:22,294][DEBUG][1599232162260][execute IVRSMSTextInfo.java:86][str: org.apache.commons.httpclient.methods.StringRequestEntity@9d730d]
+[2020Sep04 11:09:22,548][DEBUG][1599232162260][execute IVRSMSTextInfo.java:106][Respuesta Obtenida de IVRSMSTextInfo: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">
+<HTML>
+<HEAD>
+<TITLE>Error 503--Service Unavailable</TITLE>
+<META NAME="GENERATOR" CONTENT="WebLogic Server">
+</HEAD>
+<BODY bgcolor="white">
+<FONT FACE=Helvetica><BR CLEAR=all>
+<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>
+<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 503--Service Unavailable</H2>
+</FONT></TD></TR>
+</TABLE>
+<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>
+</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.5.4 503 Service Unavailable</H4>
+</FONT><P><FONT FACE="Courier New">The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay may be indicated in a Retry-After header.  If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.<blockquote>Note: The existence of the 503 status code does not imply that a server must use it when becoming overloaded. Some servers may wish to simply refuse the connection.</blockquote></FONT></P>
+</FONT></TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+]
+[2020Sep04 11:09:22,550][DEBUG][1599232162260][processRequest RCController.java:93][ivrSmsTextInfoResponse: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">
+<HTML>
+<HEAD>
+<TITLE>Error 503--Service Unavailable</TITLE>
+<META NAME="GENERATOR" CONTENT="WebLogic Server">
+</HEAD>
+<BODY bgcolor="white">
+<FONT FACE=Helvetica><BR CLEAR=all>
+<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>
+<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 503--Service Unavailable</H2>
+</FONT></TD></TR>
+</TABLE>
+<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>
+</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.5.4 503 Service Unavailable</H4>
+</FONT><P><FONT FACE="Courier New">The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay may be indicated in a Retry-After header.  If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.<blockquote>Note: The existence of the 503 status code does not imply that a server must use it when becoming overloaded. Some servers may wish to simply refuse the connection.</blockquote></FONT></P>
+</FONT></TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+]
+[2020Sep04 11:09:22,551][INFO ][1599232162260][processRequest RCController.java:129][Consulta en ivrSmsTextInfo OK]
+[2020Sep04 11:09:22,552][DEBUG][1599232162260][processRequest RCController.java:132][Inicio de transformacion XSLT]
+[2020Sep04 11:09:22,553][DEBUG][1599232162260][transformerXML RCController.java:188][XML IVRSMSTextInfo antes del transformer <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">
+<HTML>
+<HEAD>
+<TITLE>Error 503--Service Unavailable</TITLE>
+<META NAME="GENERATOR" CONTENT="WebLogic Server">
+</HEAD>
+<BODY bgcolor="white">
+<FONT FACE=Helvetica><BR CLEAR=all>
+<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>
+<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 503--Service Unavailable</H2>
+</FONT></TD></TR>
+</TABLE>
+<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>
+</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.5.4 503 Service Unavailable</H4>
+</FONT><P><FONT FACE="Courier New">The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay may be indicated in a Retry-After header.  If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.<blockquote>Note: The existence of the 503 status code does not imply that a server must use it when becoming overloaded. Some servers may wish to simply refuse the connection.</blockquote></FONT></P>
+</FONT></TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+]
+[2020Sep04 11:09:22,554][DEBUG][1599232162260][doFilter XSLTFilter.java:61][XML en transformer <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Draft//EN">
+<HTML>
+<HEAD>
+<TITLE>Error 503--Service Unavailable</TITLE>
+<META NAME="GENERATOR" CONTENT="WebLogic Server">
+</HEAD>
+<BODY bgcolor="white">
+<FONT FACE=Helvetica><BR CLEAR=all>
+<TABLE border=0 cellspacing=5><TR><TD><BR CLEAR=all>
+<FONT FACE="Helvetica" COLOR="black" SIZE="3"><H2>Error 503--Service Unavailable</H2>
+</FONT></TD></TR>
+</TABLE>
+<TABLE border=0 width=100% cellpadding=10><TR><TD VALIGN=top WIDTH=100% BGCOLOR=white><FONT FACE="Courier New"><FONT FACE="Helvetica" SIZE="3"><H3>From RFC 2068 <i>Hypertext Transfer Protocol -- HTTP/1.1</i>:</H3>
+</FONT><FONT FACE="Helvetica" SIZE="3"><H4>10.5.4 503 Service Unavailable</H4>
+</FONT><P><FONT FACE="Courier New">The server is currently unable to handle the request due to a temporary overloading or maintenance of the server. The implication is that this is a temporary condition which will be alleviated after some delay. If known, the length of the delay may be indicated in a Retry-After header.  If no Retry-After is given, the client SHOULD handle the response as it would for a 500 response.<blockquote>Note: The existence of the 503 status code does not imply that a server must use it when becoming overloaded. Some servers may wish to simply refuse the connection.</blockquote></FONT></P>
+</FONT></TD></TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+]
+[2020Sep04 11:09:22,576][ERROR][1599232162260][transformerXML RCController.java:199][Error de tipo exception]
+org.jdom.input.JDOMParseException: Error on line 1: White spaces are required between publicId and systemId.
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:504)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.sucorteal.transformer.XSLTFilter.doFilter(XSLTFilter.java:65)
+	at ve.com.digitel.sucorteal.rc.RCController.transformerXML(RCController.java:193)
+	at ve.com.digitel.sucorteal.rc.RCController.processRequest(RCController.java:134)
+	at ve.com.digitel.sucorteal.ejb.SuCorteAlBean.onMessage(SuCorteAlBean.java:125)
+	at weblogic.ejb.container.internal.MDListener.execute(MDListener.java:466)
+	at weblogic.ejb.container.internal.MDListener.transactionalOnMessage(MDListener.java:371)
+	at weblogic.ejb.container.internal.MDListener.onMessage(MDListener.java:327)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:4547)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:4233)
+	at weblogic.jms.client.JMSSession.executeMessage(JMSSession.java:3709)
+	at weblogic.jms.client.JMSSession.access$000(JMSSession.java:114)
+	at weblogic.jms.client.JMSSession$UseForRunnable.run(JMSSession.java:5058)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:516)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+Caused by: org.xml.sax.SAXParseException: White spaces are required between publicId and systemId.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1411)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanExternalID(XMLScanner.java:1026)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.scanDoctypeDecl(XMLDocumentScannerImpl.java:687)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:963)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:508)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:807)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:107)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:172)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	... 16 more
+Caused by: org.xml.sax.SAXParseException: White spaces are required between publicId and systemId.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1411)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanExternalID(XMLScanner.java:1026)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.scanDoctypeDecl(XMLDocumentScannerImpl.java:687)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:963)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:508)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:807)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:107)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1205)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:522)
+	at weblogic.xml.jaxp.WebLogicXMLReader.parse(WebLogicXMLReader.java:133)
+	at weblogic.xml.jaxp.RegistryXMLReader.parse(RegistryXMLReader.java:172)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:489)
+	at org.jdom.input.SAXBuilder.build(SAXBuilder.java:888)
+	at ve.com.digitel.sucorteal.transformer.XSLTFilter.doFilter(XSLTFilter.java:65)
+	at ve.com.digitel.sucorteal.rc.RCController.transformerXML(RCController.java:193)
+	at ve.com.digitel.sucorteal.rc.RCController.processRequest(RCController.java:134)
+	at ve.com.digitel.sucorteal.ejb.SuCorteAlBean.onMessage(SuCorteAlBean.java:125)
+	at weblogic.ejb.container.internal.MDListener.execute(MDListener.java:466)
+	at weblogic.ejb.container.internal.MDListener.transactionalOnMessage(MDListener.java:371)
+	at weblogic.ejb.container.internal.MDListener.onMessage(MDListener.java:327)
+	at weblogic.jms.client.JMSSession.onMessage(JMSSession.java:4547)
+	at weblogic.jms.client.JMSSession.execute(JMSSession.java:4233)
+	at weblogic.jms.client.JMSSession.executeMessage(JMSSession.java:3709)
+	at weblogic.jms.client.JMSSession.access$000(JMSSession.java:114)
+	at weblogic.jms.client.JMSSession$UseForRunnable.run(JMSSession.java:5058)
+	at weblogic.work.SelfTuningWorkManagerImpl$WorkAdapterImpl.run(SelfTuningWorkManagerImpl.java:516)
+	at weblogic.work.ExecuteThread.execute(ExecuteThread.java:201)
+	at weblogic.work.ExecuteThread.run(ExecuteThread.java:173)
+[2020Sep04 11:09:22,592][DEBUG][1599232162260][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2020Sep04 11:09:22,593][DEBUG][1599232162260][processRequest RCController.java:175][Response: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2020Sep04 11:09:22,594][INFO ][1599232162260][onMessage SuCorteAlBean.java:127][Solicitud procesada <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]

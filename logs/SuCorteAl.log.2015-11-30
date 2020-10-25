@@ -1,0 +1,83 @@
+[2015Nov30 18:00:28,104][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: SuCorteAl - VERSION: 1.0]
+[2015Nov30 18:00:28,128][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicio de consulta de saldo postpago]
+[2015Nov30 18:00:28,131][INFO ][1448922628130][onMessage SuCorteAlBean.java:123][Mensaje recibido con exito en la cola de SOLICITUD 584124420327]
+[2015Nov30 18:00:28,157][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="${errorCode}"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="${errorDescription}"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2015Nov30 18:00:28,159][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="]
+[2015Nov30 18:00:28,171][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: errorCode]
+[2015Nov30 18:00:28,178][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: "/> 
+		<PARAM name="ERROR_DESCRIPTION" value="]
+[2015Nov30 18:00:28,180][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: errorDescription]
+[2015Nov30 18:00:28,181][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: "/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2015Nov30 18:00:28,207][INFO ][1448922628130][processRequest RCController.java:73][Recibido un nuevo request de la cola]
+[2015Nov30 18:00:28,221][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://server.webservices.corte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getIVRSMSTextInfo>
+         <ser:gsmNo>${MSISDN}</ser:gsmNo>
+      </ser:getIVRSMSTextInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov30 18:00:28,223][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://server.webservices.corte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getIVRSMSTextInfo>
+         <ser:gsmNo>]
+[2015Nov30 18:00:28,224][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: MSISDN]
+[2015Nov30 18:00:28,225][DEBUG][1448922628130][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ser:gsmNo>
+      </ser:getIVRSMSTextInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov30 18:00:28,545][DEBUG][1448922628130][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov30 18:00:28,547][DEBUG][1448922628130][buildSOAPBody IVRSMSTextInfo.java:124][Comando Ensamblado <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://server.webservices.corte.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getIVRSMSTextInfo>
+         <ser:gsmNo>04124420327</ser:gsmNo>
+      </ser:getIVRSMSTextInfo>
+   </soapenv:Body>
+</soapenv:Envelope>]
+[2015Nov30 18:00:28,724][DEBUG][1448922628130][execute IVRSMSTextInfo.java:86][str: org.apache.commons.httpclient.methods.StringRequestEntity@a9d8a2]
+[2015Nov30 18:00:30,581][DEBUG][1448922628130][execute IVRSMSTextInfo.java:106][Respuesta Obtenida de IVRSMSTextInfo: <?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com"><ns:return xmlns:ns="http://server.webservices.corte.com" xmlns:ax27="http://domain.webservices.corte.com/xsd" type="com.corte.webservices.domain.IVRSMSText"><ax27:error xmlns:ax27="http://domain.webservices.corte.com/xsd">No Record Found</ax27:error><ax27:errorCode xmlns:ax27="http://domain.webservices.corte.com/xsd">1000</ax27:errorCode><ax27:lastExtractionProcessEndDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessEndDate><ax27:lastExtractionProcessStartDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessStartDate><ax27:lastPayment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPayment><ax27:lastPaymentDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPaymentDate><ax27:short_Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:short_Description><ax27:smsFormatID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:smsFormatID><ax27:totalConsumptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:totalConsumptions><ax27:trafficDetailsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficDetailsData><ax27:trafficUsageDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficUsageDetails></ns:return></ns:getIVRSMSTextInfoResponse></soapenv:Body></soapenv:Envelope>
+]
+[2015Nov30 18:00:30,582][DEBUG][1448922628130][processRequest RCController.java:93][ivrSmsTextInfoResponse: <?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com"><ns:return xmlns:ns="http://server.webservices.corte.com" xmlns:ax27="http://domain.webservices.corte.com/xsd" type="com.corte.webservices.domain.IVRSMSText"><ax27:error xmlns:ax27="http://domain.webservices.corte.com/xsd">No Record Found</ax27:error><ax27:errorCode xmlns:ax27="http://domain.webservices.corte.com/xsd">1000</ax27:errorCode><ax27:lastExtractionProcessEndDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessEndDate><ax27:lastExtractionProcessStartDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessStartDate><ax27:lastPayment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPayment><ax27:lastPaymentDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPaymentDate><ax27:short_Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:short_Description><ax27:smsFormatID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:smsFormatID><ax27:totalConsumptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:totalConsumptions><ax27:trafficDetailsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficDetailsData><ax27:trafficUsageDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficUsageDetails></ns:return></ns:getIVRSMSTextInfoResponse></soapenv:Body></soapenv:Envelope>
+]
+[2015Nov30 18:00:30,584][INFO ][1448922628130][processRequest RCController.java:129][Consulta en ivrSmsTextInfo OK]
+[2015Nov30 18:00:30,585][DEBUG][1448922628130][processRequest RCController.java:132][Inicio de transformacion XSLT]
+[2015Nov30 18:00:30,586][DEBUG][1448922628130][transformerXML RCController.java:188][XML IVRSMSTextInfo antes del transformer <?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com"><ns:return xmlns:ns="http://server.webservices.corte.com" xmlns:ax27="http://domain.webservices.corte.com/xsd" type="com.corte.webservices.domain.IVRSMSText"><ax27:error xmlns:ax27="http://domain.webservices.corte.com/xsd">No Record Found</ax27:error><ax27:errorCode xmlns:ax27="http://domain.webservices.corte.com/xsd">1000</ax27:errorCode><ax27:lastExtractionProcessEndDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessEndDate><ax27:lastExtractionProcessStartDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessStartDate><ax27:lastPayment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPayment><ax27:lastPaymentDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPaymentDate><ax27:short_Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:short_Description><ax27:smsFormatID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:smsFormatID><ax27:totalConsumptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:totalConsumptions><ax27:trafficDetailsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficDetailsData><ax27:trafficUsageDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficUsageDetails></ns:return></ns:getIVRSMSTextInfoResponse></soapenv:Body></soapenv:Envelope>
+]
+[2015Nov30 18:00:30,594][DEBUG][1448922628130][getFilter FilterManager.java:68][XSLTFilter]
+[2015Nov30 18:00:30,604][DEBUG][1448922628130][doFilter XSLTFilter.java:61][XML en transformer <?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><ns:getIVRSMSTextInfoResponse xmlns:ns="http://server.webservices.corte.com"><ns:return xmlns:ns="http://server.webservices.corte.com" xmlns:ax27="http://domain.webservices.corte.com/xsd" type="com.corte.webservices.domain.IVRSMSText"><ax27:error xmlns:ax27="http://domain.webservices.corte.com/xsd">No Record Found</ax27:error><ax27:errorCode xmlns:ax27="http://domain.webservices.corte.com/xsd">1000</ax27:errorCode><ax27:lastExtractionProcessEndDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessEndDate><ax27:lastExtractionProcessStartDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastExtractionProcessStartDate><ax27:lastPayment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPayment><ax27:lastPaymentDate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:lastPaymentDate><ax27:short_Description xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:short_Description><ax27:smsFormatID xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:smsFormatID><ax27:totalConsumptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:totalConsumptions><ax27:trafficDetailsData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficDetailsData><ax27:trafficUsageDetails xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax27="http://domain.webservices.corte.com/xsd" xsi:nil="true"></ax27:trafficUsageDetails></ns:return></ns:getIVRSMSTextInfoResponse></soapenv:Body></soapenv:Envelope>
+]
+[2015Nov30 18:00:30,768][DEBUG][1448922628130][removeObject ObjectPool.java:176][Verificando la existencia de objeto reutilizable]
+[2015Nov30 18:00:30,770][DEBUG][1448922628130][waitForObject ObjectPool.java:147][Sin disponibilidad en Pool. Creando Objeto]
+[2015Nov30 18:00:31,275][DEBUG][1448922628130][applyTransform XSLTFilter.java:181][Transformer com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl@1580b1d]
+[2015Nov30 18:00:31,378][DEBUG][1448922628130][doFilter XSLTFilter.java:76][Payload ]
+[2015Nov30 18:00:31,379][DEBUG][1448922628130][transformerXML RCController.java:196][Payload ]
+[2015Nov30 18:00:31,380][DEBUG][1448922628130][processRequest RCController.java:137][responseTranformed obtenido de la transformacion ]
+[2015Nov30 18:00:31,381][DEBUG][1448922628130][processRequest RCController.java:148][sms2: true]
+[2015Nov30 18:00:31,383][DEBUG][1448922628130][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2015Nov30 18:00:31,384][DEBUG][1448922628130][processRequest RCController.java:175][Response: <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
+[2015Nov30 18:00:31,385][INFO ][1448922628130][onMessage SuCorteAlBean.java:127][Solicitud procesada <?xml version="1.0" encoding="UTF-8" ?> 
+ <EAIMessage>
+	<IBX_ADP_OUT_PARAMETERS>
+		<PARAM name="ERROR_CODE" value="0"/> 
+		<PARAM name="ERROR_DESCRIPTION" value="Proceso completado satisfactoriamente"/>
+	</IBX_ADP_OUT_PARAMETERS>
+ </EAIMessage>]
